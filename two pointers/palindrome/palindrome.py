@@ -1,6 +1,5 @@
 import re
 
-
 def is_palindrome(str):
   def clean_string(str):
     str = str.lower()
