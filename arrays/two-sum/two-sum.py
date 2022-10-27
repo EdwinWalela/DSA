@@ -12,6 +12,18 @@ def two_sum_brute(arr:list,target:int) -> list:
     i = i + 1
   return [0,0]
 
+def two_sum(arr:list,target:int) ->list:
+  arr_map = {}
+  
+  for idx,num in enumerate(arr):
+    diff = target - num
+    
+    if diff not in arr_map:
+      arr_map[num] = idx
+    else:
+      return [arr_map[diff],idx]
+  
+  return [0,0]
 
-print(two_sum_brute([1,2,3,4],3))
+print(two_sum([1,2,3,4,5,6,7],13))
 
