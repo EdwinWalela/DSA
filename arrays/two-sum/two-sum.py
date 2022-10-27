@@ -1,6 +1,3 @@
-from re import I
-
-
 def two_sum_brute(arr:list,target:int) -> list:
   i = 0
   while i < len(arr):
